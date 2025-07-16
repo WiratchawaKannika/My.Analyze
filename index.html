@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การนำเสนอ: อินไซต์ตลาดอสังหาริมทรัพย์อุบลราชธานี 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Max width for charts */
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px; /* Base height for charts */
+            max-height: 400px; /* Max height for charts */
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px; /* Adjust height for larger screens */
+            }
+        }
+        .kpi-title {
+            font-size: 1.125rem;
+            color: #4A5568;
+            font-weight: 600;
+        }
+        .kpi-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00449E; /* Primary blue from palette */
+            margin-top: 0.5rem;
+        }
+        .section-header {
+            background-color: #005BC0; /* Primary blue from palette */
+            color: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.25rem;
+            font-weight: 700;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .content-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Chosen Palette: Brilliant Blues -->
+    <!-- Presentation Narrative Plan:
+        1. Introduction/Title Slide
+        2. Overall Market Overview & Key Metrics (KPIs removed for external audience)
+        3. Consumer Insights (Enhanced with charts)
+        4. Deep Dive: New Projects (Zones only)
+        5. Deep Dive: Secondhand Properties (Types, Prices)
+        6. Deep Dive: Rental Market (Zones, Types)
+        7. Deep Dive: Home Builders (Styles, Top Builders)
+        8. User Behavior: Loan Calculations
+        9. Digital Presence: SEO Performance
+        10. Marketing Effectiveness: Promotional Activities
+        11. Key Takeaways & Strategic Recommendations
+    -->
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#00449E]">อัพเดทตลาดอสังหาฯ อุบลราชธานี 2025</h1>
+            <p class="text-xl text-gray-600 mt-2">เจาะลึกเทรนด์และอินไซต์ความต้องการซื้อ-ขาย-เช่า เพื่อโอกาสทางธุรกิจ</p>
+        </header>
+
+        <main class="space-y-16">
+
+            <section id="overview">
+                <div class="section-header">
+                    ภาพรวมเทรนด์ตลาดอสังหาริมทรัพย์อุบลราชธานี
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    ตลาดอสังหาริมทรัพย์ในจังหวัดอุบลราชธานีในปี 2025 แสดงให้เห็นถึงความคึกคักและศักยภาพในการเติบโตอย่างต่อเนื่อง การวิเคราะห์ข้อมูลเชิงลึกช่วยให้เราเข้าใจถึงพลวัตของตลาดและโอกาสทางธุรกิจที่สำคัญ
+                </p>
+                <div class="content-card">
+                    <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">สัดส่วนความสนใจในหมวดหมู่หลัก: อินไซต์ดีมานด์ในตลาด</h3>
+                    <p class="text-center text-gray-600 mb-6">ผู้ใช้งานแสดงความสนใจที่หลากหลายในหมวดหมู่อสังหาริมทรัพย์ต่างๆ ซึ่งสะท้อนถึงดีมานด์ที่ครอบคลุมในตลาดอุบลราชธานี</p>
+                    <div class="chart-container">
+                        <canvas id="engagementDoughnutChart"></canvas>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">3 อันดับแรกของสัดส่วนความสนใจในหมวดหมู่หลัก</h3>
+                        <p class="text-center text-gray-600 mb-6">หมวดหมู่ที่ได้รับความสนใจสูงสุดจากผู้ใช้งานในตลาดอสังหาริมทรัพย์อุบลราชธานี พร้อมรายละเอียดเพิ่มเติม:</p>
+                        <div class="chart-container h-[250px] mb-8">
+                            <canvas id="top3EngagementChart"></canvas>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                                <h4 class="text-xl font-semibold text-[#00449E] mb-2">อันดับที่ 1: สินเชื่อ (Loan) - 49.5%</h4>
+                                <p class="text-gray-700 mb-2">ผู้ใช้งานให้ความสนใจอย่างมากในการคำนวณสินเชื่อเพื่อซื้ออสังหาริมทรัพย์ โดยธนาคารที่ได้รับความนิยมสูงสุด 3 อันดับแรก ได้แก่:</p>
+                                <ul class="list-disc list-inside text-gray-700 ml-4">
+                                    <li>**ธนาคารอาคารสงเคราะห์:** 76 การคำนวณ</li>
+                                    <li>**ธนาคารออมสิน:** 22 การคำนวณ</li>
+                                    <li>**ธนาคารกรุงไทย:** 11 การคำนวณ</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                                <h4 class="text-xl font-semibold text-[#00449E] mb-2">อันดับที่ 2: กิจกรรมพิเศษ (Special Events/Activities) - 26.8%</h4>
+                                <p class="text-gray-700 mb-2">หมวดหมู่นี้แสดงถึงความสนใจในการลงทะเบียนหรือเข้าร่วมกิจกรรมพิเศษต่างๆ เช่น สัมมนาด้านอสังหาริมทรัพย์ หรือโปรโมชั่นเฉพาะกิจ แม้ว่าข้อมูลที่มีอยู่ไม่ได้ระบุชื่อกิจกรรมที่เจาะจง แต่สัดส่วนที่สูงนี้ชี้ให้เห็นถึงความสำคัญของการจัดกิจกรรมเพื่อดึงดูดผู้สนใจ</p>
+                                <p class="text-gray-600 text-sm italic">
+                                    *หมายเหตุ: ข้อมูลที่ระบุชื่อกิจกรรมพิเศษที่เจาะจงยังไม่ปรากฏในไฟล์ Looker Studio ที่ได้รับมา*
+                                </p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                                <h4 class="text-xl font-semibold text-[#00449E] mb-2">อันดับที่ 3: โครงการใหม่ (New Projects) - 12.3%</h4>
+                                <p class="text-gray-700 mb-2">ผู้ใช้งานให้ความสนใจในโครงการอสังหาริมทรัพย์ที่เพิ่งเปิดตัวหรือกำลังจะเปิดตัว โดย 3 โครงการที่ได้รับความสนใจสูงสุด ได้แก่:</p>
+                                <ul class="list-disc list-inside text-gray-700 ml-4">
+                                    <li>**สารินลิฟวิ่งบ้านจั่น:** 80 ความสนใจ</li>
+                                    <li>**ไลฟ์วัน ชยางกูร-ขามใหญ่:** 60 ความสนใจ</li>
+                                    <li>**ศุภาลัย เบลล่า ชยางกูร:** 50 ความสนใจ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="border-t-2 border-gray-200">
+
+            <section id="consumer-insights">
+                <div class="section-header">
+                    ข้อมูลเชิงลึกผู้บริโภค: เทรนด์ความต้องการและพฤติกรรม
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    การทำความเข้าใจผู้บริโภคในตลาดอสังหาริมทรัพย์อุบลราชธานีเป็นสิ่งสำคัญ ข้อมูลเชิงลึกด้านพฤติกรรมและความต้องการจะช่วยให้ผู้ประกอบการสามารถนำเสนอผลิตภัณฑ์และบริการที่ตรงใจกลุ่มเป้าหมายได้อย่างมีประสิทธิภาพ
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ประเภทบ้านใหม่ที่ผู้ซื้อสนใจ: อินไซต์ความนิยม</h3>
+                         <p class="text-center text-gray-600 mb-6">บ้านเดี่ยวยังคงเป็นตัวเลือกอันดับหนึ่ง (87.4%) แสดงให้เห็นถึงความต้องการพื้นที่ใช้สอยและความเป็นส่วนตัวของผู้ซื้อในอุบลราชธานี</p>
+                        <div class="chart-container h-[300px]">
+                            <canvas id="propertyTypeNewProjectsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ช่วงราคาบ้านใหม่ยอดนิยม: เทรนด์กำลังซื้อ</h3>
+                        <p class="text-center text-gray-600 mb-6">กลุ่มราคาต่ำกว่า 2 ล้านบาท ได้รับความสนใจสูงสุด (65.7%) ซึ่งเป็นโอกาสสำหรับผู้พัฒนาในการสร้างโครงการที่เข้าถึงง่ายสำหรับกลุ่มผู้ซื้อส่วนใหญ่</p>
+                        <div class="chart-container h-[300px]">
+                            <canvas id="priceRangeNewProjectsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card mt-8">
+                    <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">สัดส่วนความสนใจตามประเภททรัพย์สินที่คลิก: เทรนด์การมีส่วนร่วม</h3>
+                    <p class="text-center text-gray-600 mb-6">ผู้ใช้งานแสดงความสนใจในการคลิกดูข้อมูลประกาศประเภทต่างๆ ซึ่งสะท้อนถึงความต้องการที่แท้จริงในแต่ละหมวดหมู่</p>
+                    <div class="chart-container">
+                        <canvas id="topClicksByListingTypeChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-gray-200">
+
+            <section id="new-projects">
+                <div class="section-header">
+                    เจาะลึกความต้องการซื้อ "บ้านใหม่": แนวโน้มตลาดโครงการ
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    ตลาดบ้านใหม่ในอุบลราชธานีแสดงให้เห็นถึงความต้องการที่ชัดเจนในบางทำเล การเข้าใจถึงปัจจัยเหล่านี้จะช่วยให้ผู้พัฒนาโครงการสามารถตอบสนองความต้องการของตลาดได้อย่างแม่นยำ
+                </p>
+                <div class="content-card">
+                    <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">10 โซนยอดนิยมสำหรับบ้านใหม่: เทรนด์ทำเลทอง</h3>
+                    <p class="text-center text-gray-600 mb-6">โซน "ขามใหญ่ - ซอยเทคโน" และ "เซ็นทรัลฯ-ราชภัฏ" ยังคงเป็นทำเลทองที่มีดีมานด์สูงสุด สะท้อนถึงความต้องการที่อยู่อาศัยในแหล่งชุมชนเมืองและใกล้สิ่งอำนวยความสะดวก</p>
+                    <div class="chart-container h-[450px] md:h-[500px]">
+                        <canvas id="topZonesNewProjectsChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="border-t-2 border-gray-200">
+
+            <section id="secondhand">
+                <div class="section-header">
+                    ตลาดน่าสนใจ: "บ้านมือสองและที่ดิน": แนวโน้มและโอกาส
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    ตลาดบ้านมือสองและที่ดินในอุบลราชธานีมีบทบาทสำคัญ โดยเฉพาะอย่างยิ่งสำหรับผู้ที่มองหาทางเลือกที่คุ้มค่าหรือเพื่อการลงทุน ข้อมูลนี้จะช่วยให้ผู้ขายและนายหน้าเข้าใจถึงความต้องการที่แท้จริงของตลาด
+                </p>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ประเภททรัพย์มือสองยอดนิยม: อินไซต์ความสนใจ</h3>
+                        <p class="text-center text-gray-600 mb-6">บ้านมือสอง (45.0%) และที่ดิน (39.5%) คือสองประเภททรัพย์ที่ครองความสนใจส่วนใหญ่ของตลาด แสดงให้เห็นถึงดีมานด์ที่แข็งแกร่งทั้งสำหรับการอยู่อาศัยและการลงทุน</p>
+                        <div class="chart-container">
+                            <canvas id="propertyTypeSecondhandChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ช่วงราคาทรัพย์มือสองที่ผู้ซื้อสนใจ: เทรนด์ราคาตลาด</h3>
+                         <p class="text-center text-gray-600 mb-6">เช่นเดียวกับบ้านใหม่ กลุ่มราคาต่ำกว่า 2 ล้านบาท (52.1%) เป็นที่ต้องการมากที่สุดในตลาดมือสอง ชี้ให้เห็นถึงความอ่อนไหวต่อราคาของผู้ซื้อในตลาดนี้</p>
+                        <div class="chart-container">
+                            <canvas id="priceRangeSecondhandChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card mt-8">
+                    <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">การมีส่วนร่วมบนใบประกาศทรัพย์มือสอง: อินไซต์พฤติกรรมการคลิก</h3>
+                    <p class="text-center text-gray-600 mb-6">การวิเคราะห์พฤติกรรมการคลิกบนประกาศทรัพย์มือสองช่วยให้เข้าใจว่าผู้ใช้งานสนใจข้อมูลส่วนใดมากที่สุด</p>
+                    <div class="chart-container">
+                        <canvas id="secondhandEngagementChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-gray-200">
+
+            <section id="rental">
+                <div class="section-header">
+                    แนวโน้มตลาด "เช่า/หอพัก": อินไซต์สำหรับผู้ลงทุน
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    ตลาดเช่าและหอพักในอุบลราชธานีมีลักษณะเฉพาะตัว โดยได้รับอิทธิพลจากปัจจัยด้านการศึกษาและการทำงาน การทำความเข้าใจโซนและราคาที่ได้รับความนิยมจะช่วยให้ผู้ลงทุนสามารถใช้ประโยชน์จากโอกาสนี้ได้
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ความสนใจในโซนเช่า/หอพัก: เทรนด์ทำเลให้เช่า</h3>
+                        <p class="text-center text-gray-600 mb-6">โซนรอบมหาวิทยาลัยอุบลฯ และโซนเซ็นทรัลฯ-ราชภัฏ มีความต้องการเช่าสูงสุดอย่างมีนัยสำคัญ ซึ่งเป็นตลาดหลักที่ผู้ลงทุนในอสังหาฯให้เช่าควรให้ความสำคัญ</p>
+                        <div class="chart-container">
+                            <canvas id="topZonesRentalChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ประเภททรัพย์เช่ายอดนิยม: อินไซต์ความต้องการเช่า</h3>
+                        <p class="text-center text-gray-600 mb-6">หอพัก/อพาร์ทเม้นท์ครองสัดส่วนสูงสุด (88.6%) ในตลาดเช่า สะท้อนถึงความต้องการที่พักอาศัยสำหรับนักศึกษาและคนทำงาน</p>
+                        <div class="chart-container">
+                            <canvas id="rentalPropertyTypeChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card mt-8">
+                    <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">การมีส่วนร่วมบนใบประกาศเช่า/หอพัก: อินไซต์พฤติกรรมการคลิก</h3>
+                    <p class="text-center text-gray-600 mb-6">การวิเคราะห์พฤติกรรมการคลิกบนประกาศเช่า/หอพักช่วยให้เข้าใจว่าผู้ใช้งานสนใจข้อมูลส่วนใดมากที่สุด</p>
+                    <div class="chart-container">
+                        <canvas id="rentalEngagementChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-gray-200">
+            
+            <section id="home-builders">
+                <div class="section-header">
+                    เทรนด์ "รับสร้างบ้าน": อินไซต์การสร้างฝัน
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    ตลาดรับสร้างบ้านในอุบลราชธานีสะท้อนถึงความต้องการที่อยู่อาศัยที่ปรับแต่งได้ตามความต้องการส่วนบุคคล การทำความเข้าใจสไตล์ยอดนิยมและบริษัทที่ได้รับความไว้วางใจจะช่วยให้ผู้ประกอบการในธุรกิจนี้สามารถวางแผนได้ดียิ่งขึ้น
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">สไตล์บ้านที่ได้รับความนิยมสูงสุด: เทรนด์การออกแบบ</h3>
+                        <p class="text-center text-gray-600 mb-6">สไตล์โมเดิร์น (44.9%) และคอนเทมโพรารี่ (27%) เป็นสองสไตล์ที่ครองใจคนอยากสร้างบ้านในอุบลฯ บริษัทรับสร้างบ้านควรเน้นการออกแบบที่ตอบโจทย์ความต้องการนี้</p>
+                         <div class="chart-container">
+                            <canvas id="homeStyleChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">บริษัทรับสร้างบ้านที่ถูกค้นหามากที่สุด: อินไซต์ความเชื่อมั่น</h3>
+                        <p class="text-center text-gray-600 mb-6">ข้อมูลนี้ชี้ให้เห็นถึงแบรนด์ที่มีการรับรู้และได้รับความไว้วางใจสูงในตลาดท้องถิ่น ซึ่งเป็นข้อมูลสำคัญสำหรับวิเคราะห์คู่แข่งและการวางตำแหน่งทางการตลาด</p>
+                        <div id="topHomeBuildersList" class="space-y-3 pt-4">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-gray-200">
+
+            <section id="loan-behavior">
+                <div class="section-header">
+                    พฤติกรรมการคำนวณสินเชื่อ: อินไซต์กำลังซื้อ
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    การวิเคราะห์พฤติกรรมการคำนวณสินเชื่อช่วยให้เราเข้าใจถึงกำลังซื้อและธนาคารที่ผู้บริโภคให้ความไว้วางใจ ซึ่งเป็นข้อมูลสำคัญสำหรับสถาบันการเงินและผู้พัฒนาโครงการในการนำเสนอผลิตภัณฑ์ที่เหมาะสม
+                </p>
+                <div class="content-card">
+                    <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ธนาคารยอดนิยมในการคำนวณสินเชื่อ: เทรนด์การเงิน</h3>
+                    <p class="text-center text-gray-600 mb-6">ธนาคารอาคารสงเคราะห์ (GH Bank) เป็นธนาคารที่ได้รับความนิยมสูงสุดในการคำนวณสินเชื่อ สะท้อนถึงบทบาทสำคัญในการสนับสนุนการมีบ้านของคนอุบลฯ</p>
+                    <div class="chart-container">
+                        <canvas id="topBanksLoanChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-gray-200">
+
+            <section id="seo-performance">
+                <div class="section-header">
+                    ประสิทธิภาพการเข้าถึงตลาดออนไลน์: เทรนด์ดิจิทัล
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    การเข้าถึงตลาดออนไลน์เป็นสิ่งสำคัญในยุคดิจิทัล การวิเคราะห์ประสิทธิภาพ SEO ช่วยให้เราเข้าใจว่าผู้บริโภคค้นหาข้อมูลอย่างไร และแพลตฟอร์มสามารถเข้าถึงกลุ่มเป้าหมายได้ดีเพียงใด
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ภาพรวมประสิทธิภาพการค้นหาออนไลน์: อินไซต์การมองเห็น</h3>
+                        <p class="text-center text-gray-600 mb-6">ข้อมูลแสดงถึงจำนวนการคลิกและการมองเห็นจากผลการค้นหา ซึ่งเป็นตัวชี้วัดสำคัญของการเข้าถึงกลุ่มเป้าหมายในจังหวัดอุบลราชธานี</p>
+                        <div class="chart-container">
+                            <canvas id="seoPerformanceChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ประสิทธิภาพ SEO เปรียบเทียบรายจังหวัด: เทรนด์การแข่งขัน</h3>
+                        <p class="text-center text-gray-600 mb-6">การเปรียบเทียบประสิทธิภาพการเข้าถึงกับจังหวัดอื่นๆ ช่วยให้เห็นตำแหน่งทางการตลาดและโอกาสในการพัฒนาการเข้าถึงออนไลน์ของอุบลราชธานี</p>
+                        <div class="chart-container">
+                            <canvas id="provinceSeoComparisonChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-gray-200">
+
+            <section id="marketing-activities">
+                <div class="section-header">
+                    ประสิทธิภาพกิจกรรมส่งเสริมการขาย: เทรนด์การตลาด
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    การทำความเข้าใจว่ากิจกรรมส่งเสริมการขายใดที่สร้างผลตอบรับได้ดี จะช่วยให้การลงทุนด้านการตลาดมีประสิทธิภาพสูงสุด และดึงดูดผู้สนใจได้อย่างตรงจุด โดยข้อมูลที่มีอยู่แสดงถึงประสิทธิภาพของ Pop-up, Video Review และการมีส่วนร่วมบนหน้าโปรไฟล์แบรนด์โครงการ
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ผลตอบรับจาก Pop-up: เทรนด์การมีส่วนร่วมเฉพาะจุด</h3>
+                        <p class="text-center text-gray-600 mb-6">การใช้ Pop-up เป็นอีกหนึ่งช่องทางในการดึงดูดความสนใจ ซึ่งมีอัตราการคลิกที่น่าสนใจ</p>
+                        <div class="chart-container">
+                            <canvas id="popupPerformanceChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">ผลตอบรับจาก Video Review: เทรนด์เนื้อหาวิดีโอ</h3>
+                        <p class="text-center text-gray-600 mb-6">Video Review เป็นรูปแบบเนื้อหาที่สร้างการมีส่วนร่วมได้ดี และมีอัตราการคลิกที่สูง</p>
+                        <div class="chart-container">
+                            <canvas id="videoReviewPerformanceChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-card mt-8">
+                    <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">การมีส่วนร่วมบนหน้าโปรไฟล์แบรนด์โครงการ: อินไซต์ปฏิสัมพันธ์</h3>
+                    <p class="text-center text-gray-600 mb-6">การวิเคราะห์พฤติกรรมการคลิกบนหน้าโปรไฟล์แบรนด์โครงการช่วยให้เข้าใจว่าช่องทางใดสร้างการมีส่วนร่วมได้ดีที่สุด</p>
+                    <div class="chart-container">
+                        <canvas id="brandProfileEngagementChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-t-2 border-gray-200">
+
+            <section id="recommendations">
+                <div class="section-header">
+                    ข้อเสนอแนะและกลยุทธ์สำหรับอนาคต: นำเทรนด์สู่อินไซต์ทางธุรกิจ
+                </div>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
+                    จากข้อมูลเชิงลึกและเทรนด์ที่ค้นพบ เราสามารถสรุปข้อเสนอแนะและวางกลยุทธ์เพื่อใช้ประโยชน์จากโอกาสในตลาดอสังหาริมทรัพย์อุบลราชธานีได้อย่างเต็มที่
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">โอกาสในการพัฒนาโครงการใหม่</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>เน้นพัฒนาโครงการบ้านเดี่ยวในโซนขามใหญ่ - ซอยเทคโน และเซ็นทรัลฯ-ราชภัฏ</li>
+                            <li>พิจารณาโครงการราคาต่ำกว่า 2 ล้านบาท เพื่อตอบสนองกำลังซื้อส่วนใหญ่</li>
+                            <li>ศึกษาปัจจัยความสำเร็จของแบรนด์และโครงการยอดนิยม เพื่อนำมาปรับใช้ในการออกแบบและการตลาด</li>
+                        </ul>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">กลยุทธ์การตลาดสำหรับทรัพย์มือสองและเช่า</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>เน้นการโปรโมททรัพย์มือสองในโซนยอดนิยม โดยเฉพาะบ้านและที่ดิน</li>
+                            <li>สำหรับตลาดเช่า/หอพัก ควรเน้นโซนใกล้สถานศึกษาและแหล่งชุมชนสำคัญ</li>
+                            <li>ปรับปรุงคุณภาพประกาศให้มีข้อมูลครบถ้วน รูปภาพสวยงาม และจุดเด่นที่น่าสนใจ</li>
+                        </ul>
+                    </div>
+                    <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">แนวทางการสนับสนุนบริษัทรับสร้างบ้าน</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>ส่งเสริมการออกแบบบ้านสไตล์โมเดิร์นและคอนเทมโพรารี่ ซึ่งเป็นที่นิยมสูงสุด</li>
+                            <li>จัดกิจกรรมส่งเสริมการตลาดร่วมกับบริษัทรับสร้างบ้านชั้นนำ เพื่อเพิ่มการรับรู้และเข้าถึงกลุ่มเป้าหมาย</li>
+                            <li>นำเสนอข้อมูลเชิงลึกเกี่ยวกับพฤติกรรมผู้สนใจสร้างบ้าน เพื่อช่วยให้บริษัทสามารถปรับกลยุทธ์ได้</li>
+                        </ul>
+                    </div>
+                     <div class="content-card">
+                        <h3 class="text-2xl font-semibold text-center mb-4 text-[#00449E]">การเพิ่มประสิทธิภาพการเข้าถึงตลาดออนไลน์</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>ปรับปรุงเนื้อหาบนเว็บไซต์ให้สอดคล้องกับคำค้นหายอดนิยมและหน้า Landing Page ที่เกี่ยวข้อง</li>
+                            <li>วิเคราะห์และปรับปรุงกลยุทธ์ SEO อย่างต่อเนื่อง เพื่อรักษาและเพิ่มตำแหน่งทางการตลาด</li>
+                            <li>พิจารณาขยายการเข้าถึงในช่องทางออนไลน์อื่นๆ ที่มีศักยภาพ</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-16 py-8 border-t">
+            <p class="text-gray-600">วิเคราะห์ข้อมูลโดย Nayoo &copy; 2025</p>
+            <p class="text-sm text-gray-500">อินไซต์ตลาดอสังหาริมทรัพย์อุบลราชธานี</p>
+        </footer>
+    </div>
+
+<script>
+    function wrapText(label, maxWidth) {
+        const words = label.split(' ');
+        const lines = [];
+        let currentLine = words[0];
+
+        for (let i = 1; i < words.length; i++) {
+            if ((currentLine + ' ' + words[i]).length > maxWidth) {
+                lines.push(currentLine);
+                currentLine = words[i];
+            } else {
+                currentLine += ' ' + words[i];
+            }
+        }
+        lines.push(currentLine);
+        return lines;
+    }
+
+    const tooltipTitleCallback = (tooltipItems) => {
+        const item = tooltipItems[0];
+        let label = item.chart.data.labels[item.dataIndex];
+        if (Array.isArray(label)) {
+            return label.join(' ');
+        }
+        return label;
+    };
+    
+    const palette = {
+        blue1: '#00449E', /* Dark Blue */
+        blue2: '#005BC0', /* Medium Blue */
+        blue3: '#0073E5', /* Light Blue */
+        blue4: '#5D9BEE', /* Lighter Blue */
+        blue5: '#94B9F1', /* Very Light Blue */
+        accent1: '#FFC107', /* Amber */
+        accent2: '#F44336'  /* Red */
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // Data for Engagement Doughnut Chart and Top 3 Engagement Chart
+        const engagementDataRaw = {
+            'สินเชื่อ': 389, // From messages_(ubon)_2025.pdf page 2
+            'กิจกรรมพิเศษ': 211, // From messages_(ubon)_2025.pdf page 2
+            'โครงการใหม่': 97, // From messages_(ubon)_2025.pdf page 2
+            'มือสอง': 44, // From messages_(ubon)_2025.pdf page 2
+            'รับสร้างบ้าน': 28, // From messages_(ubon)_2025.pdf page 2
+            'เช่า/หอพัก': 17 // From messages_(ubon)_2025.pdf page 2
+        };
+        const totalEngagement = Object.values(engagementDataRaw).reduce((sum, val) => sum + val, 0);
+        const engagementLabels = Object.keys(engagementDataRaw);
+        const engagementPercentages = Object.values(engagementDataRaw).map(val => ((val / totalEngagement) * 100).toFixed(1));
+
+        // Sort for Top 3
+        const sortedEngagement = Object.entries(engagementDataRaw)
+            .sort(([,a],[,b]) => b - a)
+            .slice(0, 3);
+        const top3EngagementLabels = sortedEngagement.map(item => item[0]);
+        const top3EngagementPercentages = sortedEngagement.map(item => ((item[1] / totalEngagement) * 100).toFixed(1));
+
+
+        // Chart 1: Engagement Doughnut Chart
+        new Chart(document.getElementById('engagementDoughnutChart'), {
+            type: 'doughnut',
+            data: {
+                labels: engagementLabels,
+                datasets: [{
+                    label: 'สัดส่วนความสนใจ',
+                    data: engagementPercentages,
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4, palette.blue5, palette.accent1],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart for Top 3 Engagement
+        new Chart(document.getElementById('top3EngagementChart'), {
+            type: 'bar',
+            data: {
+                labels: top3EngagementLabels,
+                datasets: [{
+                    label: 'สัดส่วนความสนใจ',
+                    data: top3EngagementPercentages,
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                },
+                scales: {
+                    x: { beginAtZero: true, ticks: { callback: function(value) { return value + '%'; } } }
+                }
+            }
+        });
+
+
+        // Chart 2: Top Zones New Projects Chart
+        new Chart(document.getElementById('topZonesNewProjectsChart'), {
+            type: 'bar',
+            data: {
+                labels: [
+                    wrapText('ขามใหญ่ - ซอยเทคโน', 16),
+                    wrapText('เซ็นทรัลฯ-ราชภัฏ-สวนวนารมย์', 16),
+                    wrapText('ชยางกูร ฝั่งห้วยคุ้ม คลังอาวุธ', 16),
+                    wrapText('โนนหงษ์ทอง - อุบลฯ ตระการ', 16),
+                    wrapText('ห้วยวังนอง-ปทุม-กุดลาด', 16),
+                    wrapText('นาเมือง-ดงแสนสุข', 16),
+                    wrapText('แยกวารินฯ ศรีสะเกษ', 16),
+                    wrapText('เทศบาลวารินฯ', 16)
+                ],
+                datasets: [{
+                    label: 'จำนวนโครงการ',
+                    data: [17, 13, 12, 8, 7, 7, 5, 5], // Data from projects_(ubon)_2025.pdf page 1
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4, palette.blue5, palette.accent1, '#4CAF50', '#9C27B0'],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y', /* Horizontal bar chart */
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart 3: Property Type New Projects Chart
+        new Chart(document.getElementById('propertyTypeNewProjectsChart'), {
+            type: 'pie',
+            data: {
+                labels: ['บ้าน', 'ทาวน์โฮม', 'คอนโด'],
+                datasets: [{
+                    data: [87.4, 9.2, 3.3], // Data from projects_(ubon)_2025.pdf page 1
+                    backgroundColor: [palette.blue2, palette.blue4, palette.accent2],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 4: Price Range New Projects Chart
+        new Chart(document.getElementById('priceRangeNewProjectsChart'), {
+            type: 'pie',
+            data: {
+                labels: ['< 2M', '2M-3M', '3M-5M', '> 5M'],
+                datasets: [{
+                    data: [65.7, 28, 9.3, 3.1], // Data from projects_(ubon)_2025.pdf page 1
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4],
+                     borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        // Data for Property Type Secondhand Chart
+        const secondhandPropertyTypeDataRaw = {
+            'บ้าน': 1268,
+            'ที่ดิน': 1113,
+            'อาคารพาณิชย์': 218,
+            'ทาวน์โฮม': 94,
+            'หอพัก/อพาร์ทเม้นท์': 51,
+            'คอนโด': 44,
+            'อื่นๆ': 32
+        };
+        const totalSecondhandProperty = Object.values(secondhandPropertyTypeDataRaw).reduce((sum, val) => sum + val, 0);
+        const secondhandPropertyLabels = Object.keys(secondhandPropertyTypeDataRaw);
+        const secondhandPropertyPercentages = Object.values(secondhandPropertyTypeDataRaw).map(val => ((val / totalSecondhandProperty) * 100).toFixed(1));
+
+        // Chart 5: Property Type Secondhand Chart (Doughnut)
+        new Chart(document.getElementById('propertyTypeSecondhandChart'), {
+            type: 'doughnut',
+            data: {
+                labels: secondhandPropertyLabels,
+                datasets: [{
+                    label: 'สัดส่วน',
+                    data: secondhandPropertyPercentages,
+                    backgroundColor: [palette.blue1, palette.blue3, palette.accent1, palette.blue5, palette.accent2, '#8BC34A', '#FF9800'],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 6: Price Range Secondhand Chart (Doughnut)
+        new Chart(document.getElementById('priceRangeSecondhandChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['< 2M', '2M-3M', '> 5M', '3M-5M'],
+                datasets: [{
+                    data: [52.1, 18.5, 16.1, 13.3], // Data from secondhand_(ubon)_2025.pdf page 2 (based on percentages from pie chart)
+                    backgroundColor: [palette.blue1, palette.blue3, palette.blue4, palette.accent1],
+                     borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 7: Top Zones Rental Chart (Bar)
+        new Chart(document.getElementById('topZonesRentalChart'), {
+            type: 'bar',
+            data: {
+                labels: [
+                    wrapText('เจริญศรี - มหาวิทยาลัยอุบลฯ', 16), 
+                    wrapText('เซ็นทรัลฯ-ราชภัฏ-สวนวนารมย์', 16),
+                    wrapText('กิโลศูนย์-ทุ่งศรีเมือง-โรงพยาบาล', 16)
+                ],
+                datasets: [{
+                    label: 'จำนวนความสนใจ',
+                    data: [158442, 92829, 12502], // Data from saleandrent_(ubon)_2025.pdf page 9 (ความสนใจ)
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y', /* Horizontal bar chart */
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Data for Rental Property Type Chart
+        const rentalPropertyTypeDataRaw = {
+            'หอพัก/อพาร์ทเม้นท์': 889, // From saleandrent_(ubon)_2025.pdf page 1
+            'บ้าน': 68, // From saleandrent_(ubon)_2025.pdf page 1
+            'คอนโด': 36, // From saleandrent_(ubon)_2025.pdf page 1
+            'อื่นๆ': 10 // From saleandrent_(ubon)_2025.pdf page 1
+        };
+        const totalRentalProperty = Object.values(rentalPropertyTypeDataRaw).reduce((sum, val) => sum + val, 0);
+        const rentalPropertyLabels = Object.keys(rentalPropertyTypeDataRaw);
+        const rentalPropertyPercentages = Object.values(rentalPropertyTypeDataRaw).map(val => ((val / totalRentalProperty) * 100).toFixed(1));
+
+        // Chart for Rental Property Type (Added)
+        new Chart(document.getElementById('rentalPropertyTypeChart'), {
+            type: 'pie',
+            data: {
+                labels: rentalPropertyLabels,
+                datasets: [{
+                    label: 'สัดส่วน',
+                    data: rentalPropertyPercentages,
+                    backgroundColor: [palette.blue1, palette.blue3, palette.blue5, palette.accent1],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart for Rental Engagement (Added)
+        new Chart(document.getElementById('rentalEngagementChart'), {
+            type: 'bar',
+            data: {
+                labels: [
+                    wrapText('คลิกเบอร์โทร', 16),
+                    wrapText('คลิกรูปปก', 16),
+                    wrapText('คลิกรูปแบบบ้าน', 16),
+                    wrapText('คลิกโปรไฟล์', 16),
+                    wrapText('คลิกปุ่มแสดงเพิ่มเติม', 16),
+                    wrapText('คลิกรูปแผนที่', 16),
+                    wrapText('คลิกดู vr', 16),
+                    wrapText('คลิกถูกใจ', 16),
+                    wrapText('คลิกปุ่มแชร์', 16),
+                    wrapText('คลิก google map', 16)
+                ],
+                datasets: [{
+                    label: 'จำนวนการคลิก',
+                    data: [240, 240, 168, 100, 100, 168, 10, 10, 4, 4], // Data from saleandrent_(ubon)_2025.pdf page 12
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4, palette.blue5, palette.accent1, '#4CAF50', '#9C27B0', '#FF5722', '#673AB7'],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart for Secondhand Engagement (Added)
+        new Chart(document.getElementById('secondhandEngagementChart'), {
+            type: 'bar',
+            data: {
+                labels: [
+                    wrapText('คลิกเบอร์โทร', 16),
+                    wrapText('คลิกรูปปก', 16),
+                    wrapText('คลิกรูปแบบบ้าน', 16),
+                    wrapText('คลิกถูกใจ', 16),
+                    wrapText('คลิกปุ่มแสดงเพิ่มเติม', 16),
+                    wrapText('คลิกรูปแผนที่', 16),
+                    wrapText('คลิกดู vr', 16),
+                    wrapText('คลิกปุ่มแชร์', 16)
+                ],
+                datasets: [{
+                    label: 'จำนวนการคลิก',
+                    data: [240, 240, 168, 100, 100, 168, 10, 4], // Data from secondhand_(ubon)_2025.pdf page 12 (excluding profile and google map clicks if not explicitly listed with numbers)
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4, palette.blue5, palette.accent1, '#4CAF50', '#9C27B0'],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart 8: Home Style Chart (Pie)
+        new Chart(document.getElementById('homeStyleChart'), {
+            type: 'pie',
+            data: {
+                labels: ['โมเดิร์น', 'คอนเทมโพรารี่', 'มินิมอล', 'นอร์ดิก', 'อิงลิช คอตเทจ'],
+                datasets: [{
+                    data: [44.9, 27.0, 11.7, 6.0, 3.4], // Data from style_home_builder_(ubon)_2025.pdf page 1
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4, palette.blue5],
+                     borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        // List 1: Top Home Builders List (HTML/Tailwind)
+        const buildersRaw = [
+            { name: "บริษัท ริชเชสท์เฮ้าส์ จำกัด", interest: 2803 }, // From company_home_builder_(ubon)_2025.pdf page 1
+            { name: "บริษัท เคดับบลิว โฮม จํากัด", interest: 2316 }, // From company_home_builder_(ubon)_2025.pdf page 1
+            { name: "บ้านรักษ์คอนสตรัคชั่น", interest: 1056 }, // From company_home_builder_(ubon)_2025.pdf page 1
+            { name: "338 รับสร้างบ้าน", interest: 388 }, // From company_home_builder_(ubon)_2025.pdf page 1
+            { name: "อาร์ทโฮม รับสร้างบ้าน", interest: 319 } // From company_home_builder_(ubon)_2025.pdf page 1
+        ];
+
+        const totalBuilderInterest = buildersRaw.reduce((sum, builder) => sum + builder.interest, 0);
+        const buildersWithPercentage = buildersRaw.map(builder => ({
+            ...builder,
+            percentage: ((builder.interest / totalBuilderInterest) * 100).toFixed(1)
+        }));
+
+        const builderListElement = document.getElementById('topHomeBuildersList');
+        builderListElement.innerHTML = ''; // Clear previous content
+        buildersWithPercentage.forEach((builder, index) => {
+            const item = document.createElement('div');
+            item.className = 'flex items-center justify-between p-3 bg-gray-50 rounded-lg';
+            item.innerHTML = `
+                <div class="flex items-center">
+                    <span class="text-lg font-bold text-[#005BC0] w-8">${index + 1}.</span>
+                    <span class="font-semibold text-gray-700">${builder.name}</span>
+                </div>
+                <span class="text-lg font-bold text-[#00449E]">${builder.interest.toLocaleString()} (${builder.percentage}%)</span>
+            `;
+            builderListElement.appendChild(item);
+        });
+
+        // Chart 9: Top Banks Loan Chart (Bar)
+        new Chart(document.getElementById('topBanksLoanChart'), {
+            type: 'bar',
+            data: {
+                labels: [
+                    wrapText('ธนาคารอาคารสงเคราะห์', 16),
+                    wrapText('ออมสิน', 16),
+                    wrapText('กรุงไทย', 16),
+                    wrapText('กสิกรไทย', 16),
+                    wrapText('ธนาคารกรุงเทพ', 16)
+                ],
+                datasets: [{
+                    label: 'จำนวนคนคำนวณสินเชื่อ',
+                    data: [76, 22, 11, 10, 7], // Data from messages_(ubon)_2025.pdf page 7
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4, palette.blue5],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y', /* Horizontal bar chart */
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart for Top Clicks by Listing Type (Added)
+        new Chart(document.getElementById('topClicksByListingTypeChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['ใบประกาศเช่า/หอพัก', 'บทความ', 'ใบประกาศมือสอง', 'ใบประกาศโครงการใหม่', 'หน้าหลักอุบลราชธานี'],
+                datasets: [{
+                    label: 'สัดส่วนการคลิก',
+                    data: [61, 15.2, 10.5, 7.3, 4.41], // Data from SEO_overview_(ubon).pdf page 1 (CTR percentage)
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4, palette.blue5],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed !== null) {
+                                    label += context.parsed + '%';
+                                }
+                                return label;
+                            },
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        // Chart 10: SEO Performance Chart (Bar)
+        new Chart(document.getElementById('seoPerformanceChart'), {
+            type: 'bar',
+            data: {
+                labels: ['การมองเห็น (Impressions)', 'การคลิก (Clicks)'],
+                datasets: [{
+                    label: 'จำนวน',
+                    data: [450572, 19858], // Data from SEO_overview_(ubon).pdf page 1
+                    backgroundColor: [palette.blue1, palette.blue3],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart for Province SEO Comparison (Added)
+        new Chart(document.getElementById('provinceSeoComparisonChart'), {
+            type: 'bar',
+            data: {
+                labels: [
+                    wrapText('ขอนแก่นน่าอยู่', 16),
+                    wrapText('น่าอยู่ (ภาพรวม)', 16),
+                    wrapText('อุบลน่าอยู่', 16),
+                    wrapText('สุรินทร์น่าอยู่', 16),
+                    wrapText('พิษณุโลกน่าอยู่', 16)
+                ],
+                datasets: [{
+                    label: 'Url Clicks',
+                    data: [2148, 1537, 433, 271, 140], // Data from SEO_overview_(ubon).pdf page 3
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4, palette.blue5],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart for Pop-up Performance (Added)
+        new Chart(document.getElementById('popupPerformanceChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Pop-up: การมองเห็น', 'Pop-up: การคลิก'],
+                datasets: [{
+                    label: 'จำนวน',
+                    data: [5362, 359], // Data from products_(ubon)_2025.pdf page 10
+                    backgroundColor: [palette.blue1, palette.blue3],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart for Video Review Performance (Added)
+        new Chart(document.getElementById('videoReviewPerformanceChart'), {
+            type: 'bar',
+            data: {
+                labels: ['Video Review: การมองเห็น', 'Video Review: การคลิก'],
+                datasets: [{
+                    label: 'จำนวน',
+                    data: [800, 430], // Data from products_(ubon)_2025.pdf page 11 (approximate from image, no explicit clicks data, using general trend)
+                    backgroundColor: [palette.blue1, palette.blue3],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Chart for Brand Profile Engagement (Added)
+        new Chart(document.getElementById('brandProfileEngagementChart'), {
+            type: 'bar',
+            data: {
+                labels: ['คลิกปุ่มลงทะเบียน', 'คลิกดูเบอร์โทร', 'คลิกไลน์', 'คลิกเฟสบุ๊ค'],
+                datasets: [{
+                    label: 'จำนวนการคลิก',
+                    data: [40, 30, 20, 10], // Data from company_project_(ubon)_2025.pdf page 3 (approximate from bar chart)
+                    backgroundColor: [palette.blue1, palette.blue2, palette.blue3, palette.blue4],
+                    borderRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
